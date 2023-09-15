@@ -10,11 +10,11 @@
 #include "MainComponent.h"
 
 //==============================================================================
-class AndroidBluetoothApplication  : public juce::JUCEApplication
+class AndroidPairingApplication  : public juce::JUCEApplication
 {
 public:
     //==============================================================================
-    AndroidBluetoothApplication() {}
+    AndroidPairingApplication() {}
 
     const juce::String getApplicationName() override       { return ProjectInfo::projectName; }
     const juce::String getApplicationVersion() override    { return ProjectInfo::versionString; }
@@ -102,4 +102,4 @@ private:
 
 //==============================================================================
 // This macro generates the main() routine that launches the app.
-START_JUCE_APPLICATION (AndroidBluetoothApplication)
+START_JUCE_APPLICATION (AndroidPairingApplication)
